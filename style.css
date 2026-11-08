@@ -84,7 +84,9 @@ header {
     transform: translate(3px, 3px);
 }
 
-
+section {
+    box-sizing: border-box;
+}
 .hero-section {
     width: 100%;
     background-color: #FFF085;
@@ -891,6 +893,7 @@ footer {
     padding-block: 80px;
     background-color: black;
     color: white;
+    box-sizing: border-box;
 }
 .footer-container {
     width: 100%;
@@ -1015,7 +1018,11 @@ footer {
     text-decoration: none;
 }
 
-
+@media screen and (max-width: 639px) {
+    .fresh-box {
+        display: none;
+    }
+}
 @media screen and (max-width: 1279px) {
     header {
         padding: 16px;
@@ -1055,6 +1062,11 @@ footer {
         right: -18px;
     }
     .articles-container {
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    .article-card {
+        max-width: 100%;
         flex-wrap: wrap;
     }
     .articles-news {
