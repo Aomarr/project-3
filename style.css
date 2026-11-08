@@ -1022,6 +1022,9 @@ footer {
     .fresh-box {
         display: none;
     }
+    .text-bits {
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 1279px) {
     header {
@@ -1039,6 +1042,19 @@ footer {
         box-sizing: border-box;
         min-width: 48.35%;
         max-width: 48.65%;  
+    }
+    .text-bits {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 0;
+        justify-content:space-between;
+    }
+    .first {
+        max-width: 260px;
+    }
+    .info-bits {
+        max-width: 260px;
+        min-width: 167px;
     }
 }
 
@@ -1108,5 +1124,9 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 12px;
+    }
+    .info-bits {
+        min-width: 244px;
+        max-width: 425px;
     }
 }
