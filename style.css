@@ -15,6 +15,7 @@ body {
     font-family: "Exo", sans-serif;
 }
 header {
+    box-sizing: border-box;
     width: 100%;
     padding-block: 16px;
     position: fixed;
